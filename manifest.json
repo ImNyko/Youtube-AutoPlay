@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "AutoPlay YouTube",
+    "version": "1.0",
+    "description": "Reproduce automáticamente videos de YouTube cuando se pausan en los primeros 5 segundos.",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+    {
+        "matches": ["*://www.youtube.com/*"],
+        "js": ["content.js"]
+    }
+    ]
+}
